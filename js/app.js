@@ -45,7 +45,7 @@ const formatoPorcentaje = (valor)=>{
 
 const cargarCabecero = () =>{
     const presupuesto = totalIngreso() - totalEgreso();
-    const porcentajeEgreso = (totalEgreso()/totalIngreso())*100;
+    const porcentajeEgreso = (totalEgreso()/totalIngreso());
 
     document.getElementById("presupuesto").innerHTML=formatoMoneda(presupuesto);
     console.log(`Presupuesto: ${formatoMoneda(presupuesto)}`);
