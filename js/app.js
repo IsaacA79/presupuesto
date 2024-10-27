@@ -7,8 +7,8 @@ const ingresos =[new Ingreso('Salario', 5000),
                  new Ingreso('Venta Auto' ,3000),
                  new Ingreso('trabajo Extra', 2000)];
 
-const egresos = [new Egreso('Renta',100),
-                 new Egreso('Ropa',10)];
+const egresos = [new Egreso('Renta',3000),
+                 new Egreso('Ropa',100.55)];
 
 const totalIngreso =()=>{
     let totalIngreso = 0;
@@ -43,15 +43,21 @@ const formatoPorcentaje = (valor)=>{
 };
 
 
+
+
 const cargarCabecero = () =>{
     const presupuesto = totalIngreso() - totalEgreso();
     const porcentajeEgreso = (totalEgreso()/totalIngreso());
+    const porcentjeIngreso = ( (totalIngreso()-totalEgreso())/totalIngreso());
 
     document.getElementById("presupuesto").innerHTML=formatoMoneda(presupuesto);
     console.log(`Presupuesto: ${formatoMoneda(presupuesto)}`);
 
     document.getElementById("porcentaje").innerHTML=formatoPorcentaje(porcentajeEgreso);
-    console.log(`Porcentaje de Egreso: ${porcentajeEgreso.toFixed(2)}%`);
+    console.log(`Porcentaje de Egreso: ${porcentajeEgreso.toFixed(2)} %`);
+
+    document.getElementById("porcentajeI").innerHTML=formatoPorcentaje(porcentjeIngreso)
+    console.log(`Porcenajate Ingreso ${porcentjeIngreso.toFixed(2)} %`)
 
     document.getElementById("ingresos").innerHTML=formatoMoneda(totalIngreso());
     console.log(`El total de los Ingresos es de ${formatoMoneda(totalIngreso())}`);

@@ -157,7 +157,7 @@ body {
     margin-left: 10px;
 }
 
-.agregar_btn:active { transform: translateY(2px); }
+.agregar_btn:active { transform: translateY(3px); }
 
 .agregar_tipo:focus,
 .agregar_descripcion:focus,
@@ -226,6 +226,7 @@ h2 {
 .ingreso .elemento_valor,
 .ingreso .elemento_eliminar--btn {
     color: #28B9B5;
+    margin-left: 2px;
 }
 
 .egreso .elemento_valor,
@@ -237,6 +238,8 @@ h2 {
 
 .elemento_eliminar {
     float: left;
+    margin-right: 5px;
+    margin-left: 30px;
 }
 
 .elemento_eliminar--btn {
