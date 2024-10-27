@@ -157,6 +157,7 @@ window.agregarDato = agregarDato;
 const cargarApp=()=>{
     cargarCabecero();
     cargarIngreso();
+    cargarEgreso();
 };
 
 export {cargarApp};
