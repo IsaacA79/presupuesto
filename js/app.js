@@ -87,7 +87,7 @@ const crearIngresoHTML = (ingreso)=>{
         <div class="elemento limpiarEstilos">
             <div class="elemento_descripcion">${ingreso.descripcion} </div>
             <div class="derecha limpiarEstilos">
-                  <div class="elemento_valor">${formatoMoneda(ingreso.valor)}</div>
+                  <div class="elemento_valor"> + ${formatoMoneda(ingreso.valor)}</div>
                   <div class="elemento_eliminar">
                         <button class="elemento_eliminar_btn mdi--close-circle-outline" onclick="eliminarIngreso(${ingreso.id})"></button>
                   </div>
@@ -101,7 +101,7 @@ const crearEgresoHTML = (egreso)=>{
         <div class="elemento limpiarEstilos">
             <div class="elemento_descripcion">${egreso.descripcion} </div>
             <div class="derecha limpiarEstilos">
-                  <div class="elemento_valor">${formatoMoneda(egreso.valor)}</div>
+                  <div class="elemento_valor"> - ${formatoMoneda(egreso.valor)}</div>
                   <div class="elemento_eliminar">
                         <button class="elemento_eliminar_btn mdi--close-circle-outline" onclick="eliminarEgreso(${egreso.id})"></button>
                   </div>
