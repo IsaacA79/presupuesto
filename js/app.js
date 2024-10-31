@@ -3,11 +3,10 @@ import Egreso from "./Egreso.js";
 
 //arreglos
 
-const ingresos =[new Ingreso('Salario', 5000), 
-                 new Ingreso('Venta Auto' ,3000),
-                 new Ingreso('trabajo Extra', 2000)];
+const ingresos =[new Ingreso('Salario', 4000.28), 
+                 new Ingreso('Venta Auto' ,2078.66)];
 
-const egresos = [new Egreso('Renta',3000),
+const egresos = [new Egreso('Renta',300.55),
                  new Egreso('Ropa',100.55)];
 
 const totalIngreso =()=>{
